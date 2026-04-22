@@ -4,7 +4,7 @@ function Signup(){
     return(
         <div>
             <Navbar/>
-            <h1>Signup Page</h1>
+            <h1>Signup page</h1>
         </div>
     );
 }
