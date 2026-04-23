@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './Home.css';
 import Navbar from "../../Components/Navbar/navbar";
 
+const Home = () => {
+  const [cartCount, setCartCount] = useState(0);
 
   const products = [
   {
