@@ -107,7 +107,10 @@ const Home = () => {
   }
 ];
 
-  
+  const handleAddToCart = (productName) => {
+    setCartCount(cartCount + 1);
+    alert(`${productName} added to cart!`);
+  };
 
   return (
     <div className="home">
