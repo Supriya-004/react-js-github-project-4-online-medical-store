@@ -24,6 +24,7 @@
     border:none;
     text-align: center;
     font-weight: 3px;
+    margin-left: 8px;
 }
 .buy-now-btn:hover{
     background: #218838;

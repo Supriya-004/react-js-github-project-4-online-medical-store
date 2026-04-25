@@ -1,7 +1,7 @@
 import { useParams } from "react-router";
 import { useState } from "react";
 import PRODUCTS from "../../data.js";
-import Navbar from "../../../components/Navbar/navbar.jsx";
+import Navbar from "../../../Components/Navbar/navbar.jsx";
 import Button from "../../../components/Button/button.jsx";
 import { useNavigate } from "react-router";
 import "./productcarddetails.css";
@@ -20,7 +20,9 @@ function ProductCardDetails() {
         setCount(count + 1);
     }
     function decrement() {
-        setCount(count - 1);
+        if (count > 0) {
+            setCount(count - 1);
+        }
     }
 
     let navigate = useNavigate();
@@ -42,17 +44,40 @@ function ProductCardDetails() {
                     </div>
                 </div>
                 <div className="product-details-info">
-                    <h1>{product.name}</h1>
+                    <h1 className="product-details-title">{product.name}</h1>
                     <p className="product-description">{product.description}</p>
-                    <p className="product-price">Price: ${product.price.toFixed(2)}</p>
+                    <p className="gram-info"><span className="gram-label">Gram:</span> {product.maxGram}</p>
+                    <p className="product-price"><span className="price-label"> Price:</span> ${product.price.toFixed(2)}</p>
 
-                    <button onClick={decrement}>-</button>
-                    <span id="counter">{count}</span>
-                    <button onClick={increment}>+</button>
-                    <p>Total Price: ${(count * product.price).toFixed(2)}</p>
-                    <Button title={"Buy Now"} className="buy-now-btn" onClick={() => {
-                        navigate(`/order/${product.productId}`);
-                    }} />
+                    <div className="counter">
+                        <h6>Select Quantity:</h6>
+                        <button onClick={decrement} className="decrement"><span className="sub">-</span></button>
+                        <span id="counter">{count}</span>
+                        <button onClick={increment} className="increment"><span className="add">+</span></button>
+                    </div>
+
+                    <p className="product-price"><span className="price-label">Total Price:</span> ${(count * product.price).toFixed(2)}</p>
+                    <Button
+                        title={"Buy Now"}
+                        className="buy-now-btn"
+                        onClick={() => {
+
+                            if (count === 0) {
+                                alert("Please select quantity");
+                                return; 
+                            }
+                            const orderData = {
+                                name: product.name,
+                                price: Number(product.price), 
+                                quantity: count,
+                                totalPrice: product.price * count
+                            };
+
+                            localStorage.setItem("order", JSON.stringify(orderData));
+
+                            navigate(`/order/${product.productId}`);
+                        }}
+                    />
                 </div>
             </div>
         </div>

@@ -17,6 +17,7 @@ root.render(
         <Route path="/order" element={<Order />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/order/:productId" element={<Order />} />
         <Route path="/products/:productId" element={<ProductCardDetails />} />
       </Routes> 
   </BrowserRouter>

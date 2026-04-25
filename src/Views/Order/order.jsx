@@ -2,8 +2,12 @@ import { useState } from "react";
 import { AlertCircle } from "lucide-react";
 import "./order.css";
 import Navbar from "../../Components/Navbar/navbar";
+// import { useParams } from "react-router-dom";
+// import PRODUCTS from "../../data.js";
 
-export default function OrderPage() {
+export default function Order() {
+const storedOrder = JSON.parse(localStorage.getItem("order"));
+
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -15,14 +19,14 @@ export default function OrderPage() {
 
   const [error, setError] = useState("");
 
-  // Dummy product
-  const product = {
-    name: "Paracetamol",
-    price: 50,
-    qty: 2
-  };
+const product = storedOrder || {
+  name: "",
+  price: 0,
+  quantity: 0,
+  totalPrice: 0
+};
 
-  const total = product.price * product.qty + 20;
+const total = product.totalPrice + 20;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -43,6 +47,7 @@ export default function OrderPage() {
 
     alert("Order Placed Successfully 🎉");
     console.log(formData);
+    localStorage.removeItem("order");
   };
 
   return (
@@ -65,10 +70,10 @@ export default function OrderPage() {
           {/* Order Summary */}
           <div className="order-summary">
             <h3>Order Summary</h3>
-            <p>{product.name} x {product.qty}</p>
-            <p>Price: ₹{product.price * product.qty}</p>
+            <p>{product.name} x {product.quantity}</p>
+            <p>Price: ₹{product.price}</p>
             <p>Delivery: ₹20</p>
-            <h4>Total: ₹{total}</h4>
+            <h4><p>Price: ₹{product.totalPrice}</p></h4>
           </div>
 
           {/* Form */}
