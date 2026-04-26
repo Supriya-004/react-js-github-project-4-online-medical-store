@@ -28,7 +28,7 @@ function ProductCardDetails() {
     }
 
     let navigate = useNavigate();
-   
+
     return (
         <div className="product-details">
             <Toaster position="top-center" />
@@ -52,6 +52,13 @@ function ProductCardDetails() {
                     <p className="gram-info"><span className="gram-label">Gram:</span> {product.maxGram}</p>
                     <p className="product-price"><span className="price-label"> Price:</span> ${product.price.toFixed(2)}</p>
 
+                    <span className="effect-label">Side Effects:</span>
+                    <div className="effects">
+                        {product.sideEffects.map((effect, index) => (
+                            <div key={index} className="side-effects">{effect}</div>
+                        ))}
+                    </div>
+
                     <div className="counter">
                         <h6>Select Quantity:</h6>
                         <button onClick={decrement} className="decrement"><span className="sub">-</span></button>
@@ -67,11 +74,11 @@ function ProductCardDetails() {
 
                             if (count === 0) {
                                 toast.error("Please select quantity");
-                                return; 
+                                return;
                             }
                             const orderData = {
                                 name: product.name,
-                                price: Number(product.price), 
+                                price: Number(product.price),
                                 quantity: count,
                                 totalPrice: product.price * count
                             };

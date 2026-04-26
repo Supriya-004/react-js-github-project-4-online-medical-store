@@ -242,15 +242,16 @@
 }
 
 .about-btn {
-  background: #2ecc71;
+  background:  #2e7d32;
   color: white;
   border: none;
   padding: 6px 12px;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .about-btn:hover {
-   background: #27ae60;
+   background: #218838;
   transform: scale(1.05);
 }
 
