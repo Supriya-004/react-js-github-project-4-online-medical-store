@@ -66,6 +66,7 @@
 }
 .sub-part3{
        margin-top: 10px;
+       color: white;
 }
 .link{
     text-decoration: none;
@@ -91,9 +92,6 @@
 }
 .sub-part4{
        margin-top: 10px;
-}
-.sub-part4.span{
-       margin-left: 10px;
 }
 .part5{
     display: flex;

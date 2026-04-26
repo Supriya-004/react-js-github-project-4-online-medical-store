@@ -54,31 +54,13 @@ function Footer() {
                  <div className="social-info">
                 <div className="sub-part4">
                     <FaInstagram />
-                    <Link
-                        to="https://instagram.com/yourusername"
-                        target="_blank"
-                        className="link" >
-                        <span>Instagram</span>
-                    </Link>
                 </div>
                 <div className="sub-part4">
                     <FaFacebook />
-                    <Link
-                        to="https://facebook.com/yourpage"
-                        target="_blank"
-                        className="link">
-                        <span>Facebook</span>
-                    </Link>
                 </div>
 
                 <div className="sub-part4">
                     <FaTwitter />
-                    <Link
-                        to="https://twitter.com/yourusername"
-                        target="_blank"
-                        className="link" >
-                        <span>Twitter</span>
-                    </Link>
                 </div>
                 </div>
             </div>
