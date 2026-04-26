@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Eye, EyeOff, Mail, Lock, AlertCircle } from "lucide-react";
 import "./Login.css";
-import Navbar from "../../Components/Navbar/navbar.jsx";
+import Navbar from "../../Components/navbar/navbar.jsx";
 import Footer from "../../Components/footer/footer.jsx";
 
 const validateEmail = (email) => {

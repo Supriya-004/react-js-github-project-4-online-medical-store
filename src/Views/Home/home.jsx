@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Home.css';
-import Navbar from "../../Components/Navbar/navbar.jsx";
+import Navbar from "../../Components/navbar/navbar.jsx";
 import Footer from "../../Components/footer/footer.jsx";
 import { Link } from "react-router-dom";
 
