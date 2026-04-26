@@ -16,22 +16,22 @@ const Home = () => {
   }, [cart]);
 
   const products = [
-    { id: 1, name: 'Paracetamol 500mg', price: 5.99, image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=400&q=80', description: 'Fever & pain relief' },
-    { id: 2, name: 'Vitamin C Tablets', price: 12.50, image: 'https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?auto=format&fit=crop&w=400&q=80', description: 'Boost immunity' },
-    { id: 3, name: 'Cough Syrup', price: 10.99, image: 'https://images.unsplash.com/photo-1628771065518-0d82f1938462?auto=format&fit=crop&w=400&q=80', description: 'Cold relief' },
-    { id: 4, name: 'Hand Sanitizer', price: 8.99, image: 'https://images.unsplash.com/photo-1583947215259-38e31be8751f?auto=format&fit=crop&w=400&q=80', description: 'Kills germs' },
-    { id: 5, name: 'First Aid Kit', price: 32.00, image: 'https://images.unsplash.com/photo-1603398938378-e54eab446dde?auto=format&fit=crop&w=400&q=80', description: 'Emergency kit' },
-    { id: 6, name: 'Thermometer', price: 12.99, image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=400&q=80', description: 'Temperature check' },
-    { id: 7, name: 'BP Monitor', price: 45.00, image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=400&q=80', description: 'Health monitor' },
-    { id: 8, name: 'Bandage Pack', price: 4.99, image: 'https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?auto=format&fit=crop&w=400&q=80', description: 'Wound care' },
-    { id: 9, name: 'Calcium Tablets', price: 14.50, image: 'https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?auto=format&fit=crop&w=400&q=80', description: 'Strong bones support' },
-    { id: 10, name: 'Antiseptic Liquid', price: 7.50, image: 'https://images.unsplash.com/photo-1583947215259-38e31be8751f?auto=format&fit=crop&w=400&q=80', description: 'Wound cleaning' },
-    { id: 11, name: 'Face Mask (50 Pack)', price: 15.00, image: 'https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?auto=format&fit=crop&w=400&q=80', description: 'Protection mask' },
-    { id: 12, name: 'Multivitamin Capsule', price: 20.00, image: 'https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?auto=format&fit=crop&w=400&q=80', description: 'Daily health support' },
-    { id: 13, name: 'Glucose Powder', price: 6.50, image: 'https://images.unsplash.com/photo-1603398938378-e54eab446dde?auto=format&fit=crop&w=400&q=80', description: 'Instant energy boost' },
-    { id: 14, name: 'Antibiotic Tablets', price: 18.00, image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=400&q=80', description: 'Infection treatment' },
-  { id: 15, name: 'Antibiotic Tablets', price: 18.00, image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=400&q=80', description: 'Infection treatment' }
-  ];
+  { id: 1, name: 'Paracetamol 500mg', price: 5.99, image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=400&q=80', description: 'Fever & pain relief' },
+   { id: 2, name: 'Vitamin C Tablets', price: 12.50, image: 'https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?auto=format&fit=crop&w=400&q=80', description: 'Boost immunity' }, 
+   { id: 3, name: 'Cough Syrup', price: 10.99, image: 'https://images.unsplash.com/photo-1628771065518-0d82f1938462?auto=format&fit=crop&w=400&q=80', description: 'Cold relief' }, 
+   { id: 4, name: 'Hand Sanitizer', price: 8.99, image: 'https://images.unsplash.com/photo-1583947215259-38e31be8751f?auto=format&fit=crop&w=400&q=80', description: 'Kills germs' }, 
+   { id: 5, name: 'First Aid Kit', price: 32.00, image: 'https://images.unsplash.com/photo-1603398938378-e54eab446dde?auto=format&fit=crop&w=400&q=80', description: 'Emergency kit' }, 
+   { id: 6, name: 'Thermometer', price: 12.99, image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=400&q=80', description: 'Temperature check' }, 
+   { id: 7, name: 'BP Monitor', price: 45.00, image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=400&q=80', description: 'Health monitor' }, 
+   { id: 8, name: 'Bandage Pack', price: 4.99, image: 'https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?auto=format&fit=crop&w=400&q=80', description: 'Wound care' }, 
+   { id: 9, name: 'Bandage Pack', price: 4.99, image: 'https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?auto=format&fit=crop&w=400&q=80', description: 'Wound protection' },
+    { id: 10, name: 'Calcium Tablets', price: 14.50, image: 'https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?auto=format&fit=crop&w=400&q=80', description: 'Strong bones support' },
+     { id: 11, name: 'Antiseptic Liquid', price: 7.50, image: 'https://images.unsplash.com/photo-1583947215259-38e31be8751f?auto=format&fit=crop&w=400&q=80', description: 'Wound cleaning' }, 
+     { id: 12, name: 'Face Mask (50 Pack)', price: 15.00, image: 'https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?auto=format&fit=crop&w=400&q=80', description: 'Protection mask' },
+      { id: 13, name: 'Multivitamin Capsules', price: 20.00, image: 'https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?auto=format&fit=crop&w=400&q=80', description: 'Daily health support' },
+       { id: 14, name: 'Glucose Powder', price: 6.50, image: 'https://images.unsplash.com/photo-1603398938378-e54eab446dde?auto=format&fit=crop&w=400&q=80', description: 'Instant energy boost' }, 
+       { id: 15, name: 'Antibiotic Tablets', price: 18.00, image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=400&q=80', description: 'Infection treatment' },
+ ];
 
   const addToCart = (product) => {
     const exist = cart.find(i => i.id === product.id);
