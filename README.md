@@ -51,16 +51,6 @@
 
 ---
 
-### 🧺 Cart Functionality
-
-* Users can add products to cart using **Add to Cart button**
-* If the same product is added multiple times:
-
-  * Quantity increases automatically
-* Cart stores selected items before ordering
-
----
-
 ### 🛒 Order Page
 
 * Opens after clicking **Buy Button**
@@ -71,21 +61,6 @@
   * Price
   * Delivery Charges
   * Total Amount
-
----
-
-### 🔐 Authentication
-
-* Login Page
-* Signup Page
-
----
-
-### 📦 UI Components
-
-* Header (Navigation bar)
-* Footer (Contact & Information)
-* Reusable Product Cards
 
 ---
 
@@ -133,9 +108,3 @@ npm run dev
 **Vaishnavi Pawar**\
 **Anushka Kakade**\
 **Supriya Walhekar**
-
----
-
-## 📄 License
-
-This project is for educational purposes only.
