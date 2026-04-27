@@ -83,7 +83,7 @@ const Home = () => {
             const qty = cartItem ? cartItem.quantity : 0;
 
             return (
-              <div key={product.id} className="product-card">
+              <div key={product.id} className="home-product-card">
 
                 <div className="product-image">
                   <img src={product.image} alt={product.name} />
@@ -93,7 +93,7 @@ const Home = () => {
                   <h3>{product.name}</h3>
                   <p className="product-desc">{product.description}</p>
 
-                  <h4 className="product-price">
+                  <h4 className="home-product-price">
                     <b>Price:</b> ${(product.price * (qty || 1)).toFixed(2)}
                   </h4>
 

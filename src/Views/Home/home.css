@@ -45,7 +45,7 @@ body {
   gap: 30px;
 }
 
-.product-card {
+.home-product-card {
   background: #e6e6e6;
   border-radius: 12px;
   padding: 20px;
@@ -54,7 +54,7 @@ body {
   box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
-.product-card:hover {
+.home-product-card:hover {
   transform: translateY(-6px);
 }
 
@@ -82,7 +82,7 @@ body {
   margin-bottom: 10px;
 }
 
-.product-price {
+.home-product-price {
   font-size: 15px;
   font-weight: 600;
   margin-bottom: 15px;
